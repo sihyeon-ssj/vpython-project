@@ -1,0 +1,10 @@
+Web VPython 3.2
+import random
+box(texture = "https://i.imgur.com/MNehT0m.jpeg")
+poop = sphere(texture = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLQbWQdQSDxrKruCTgbYbBNxSxgs2y8oc4Y7OtWxVHqA&s=10", size = vec(0.3,0.3,0.3),
+v=vec(0,-0.5,0))
+dt = 0.01
+
+while poop.pos.y > -10:
+    rate(100)
+    poop.pos = poop.pos + poop.v*dt
